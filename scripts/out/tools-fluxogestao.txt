@@ -1,0 +1,171 @@
+INVENTÁRIO DE FERRAMENTAS / FUNÇÕES
+Alvo: http://178.253.250.173/
+Gerado: 2026-08-24 23:53:26Z
+Arquitetura: next.js (SSR HTML present)
+Método: beautifulsoup — SSR, Playwright not required for public pages
+robots.txt: HTTP 404
+sitemap.xml: HTTP 404
+
+PÁGINAS VARRIDAS
+----------------
+[200] http://178.253.250.173/  FluxoGestão — Liberdade operacional, mesmo sem internet
+[200] http://178.253.250.173/login  FluxoGestão — Liberdade operacional, mesmo sem internet
+[200] http://178.253.250.173/admin → http://178.253.250.173/login?next=%2Fadmin  FluxoGestão — Liberdade operacional, mesmo sem internet
+[200] http://178.253.250.173/pos → http://178.253.250.173/login?next=%2Fpos  FluxoGestão — Liberdade operacional, mesmo sem internet
+[200] http://178.253.250.173/dashboard → http://178.253.250.173/login?next=%2Fdashboard  FluxoGestão — Liberdade operacional, mesmo sem internet
+[200] http://178.253.250.173/loja  FluxoGestão — Liberdade operacional, mesmo sem internet
+[200] http://178.253.250.173/dashboard/catalogo → http://178.253.250.173/login?next=%2Fdashboard%2Fcatalogo  FluxoGestão — Liberdade operacional, mesmo sem internet
+
+FERRAMENTAS / FUNÇÕES
+---------------------
+01. [link] FluxoGestão
+    Link interno: /
+    http://178.253.250.173/
+
+02. [link] Recursos
+    Link interno: #recursos
+    http://178.253.250.173/#recursos
+
+03. [link] Preços
+    Link interno: #precos
+    http://178.253.250.173/#precos
+
+04. [link] Quem usa
+    Link interno: #depoimentos
+    http://178.253.250.173/#depoimentos
+
+05. [link] Entrar
+    Link interno: /login
+    http://178.253.250.173/login
+
+06. [link] Site
+    Link interno: /admin
+    http://178.253.250.173/admin
+
+07. [link] Abrir o PDV
+    Link interno: /pos
+    http://178.253.250.173/pos
+
+08. [link] Ver a gestão
+    Link interno: /dashboard
+    http://178.253.250.173/dashboard
+
+09. [link] Começar
+    Link interno: /pos
+    http://178.253.250.173/pos
+
+10. [link] Começar no Pro
+    Link interno: /pos
+    http://178.253.250.173/pos
+
+11. [link] Entrar no caixa
+    Link interno: /pos
+    http://178.253.250.173/pos
+
+12. [link] PDV
+    Link interno: /pos
+    http://178.253.250.173/pos
+
+13. [link] Gestão
+    Link interno: /dashboard
+    http://178.253.250.173/dashboard
+
+14. [link] Catálogo
+    Link interno: /loja
+    http://178.253.250.173/loja
+
+15. [action] Internet: caída
+    Controle de interface (button)
+    http://178.253.250.173/
+
+16. [action] venda #128 salva no aparelho
+    Controle de interface (button)
+    http://178.253.250.173/
+
+17. [section] Liberdade operacional. O turno não espera o 4G.
+    PDV no aparelho. Estoque no XML. Financeiro ao vivo. A venda entra na fila local — a nuvem alcança quando a fibra volta.
+    http://178.253.250.173/
+
+18. [section] Quando a internet cai.
+    Dois sistemas. O mesmo bairro. Só um continua o turno.
+    http://178.253.250.173/
+
+19. [section] Sistemas comuns
+    http://178.253.250.173/
+
+20. [section] FluxoGestão
+    http://178.253.250.173/
+
+21. [section] O ecossistema da loja.
+    PDV, estoque e financeiro no mesmo ritmo — no balcão e no escritório.
+    http://178.253.250.173/
+
+22. [section] PDV inteligente
+    Busca no toque, item no clique, PIX em um gesto. Feito para o balcão — não para o mouse.
+    http://178.253.250.173/
+
+23. [section] Estoque via XML
+    A NF-e entra. O saldo sobe. Validade acende amarelo antes de virar perda.
+    http://178.253.250.173/
+
+24. [section] Financeiro ao vivo
+    Faturamento e margem crescem no gráfico enquanto o turno acontece.
+    http://178.253.250.173/
+
+25. [section] Planos sem letra miúda.
+    Pro é o que a loja usa de verdade.
+    http://178.253.250.173/
+
+26. [section] Starter
+    Um caixa. Um turno.
+    http://178.253.250.173/
+
+27. [section] Pro
+    Onde a loja realmente vive
+    http://178.253.250.173/
+
+28. [section] Enterprise
+    Rede, várias lojas
+    http://178.253.250.173/
+
+29. [section] Quem já tirou o medo da queda.
+    Gente que vende todo dia. Não depoimento de agência.
+    http://178.253.250.173/
+
+30. [section] O próximo da fila não espera o 4G.
+    Abra o PDV. Simule a queda. Feche a venda mesmo assim.
+    http://178.253.250.173/
+
+31. [tool] Sistemas comuns
+    PDV, estoque e financeiro no mesmo ritmo — no balcão e no escritório.
+    http://178.253.250.173/
+
+32. [tool] FluxoGestão
+    PDV, estoque e financeiro no mesmo ritmo — no balcão e no escritório.
+    http://178.253.250.173/
+
+33. [tool] PDV inteligente
+    Busca no toque, item no clique, PIX em um gesto. Feito para o balcão — não para o mouse.
+    http://178.253.250.173/
+
+34. [tool] Estoque via XML
+    A NF-e entra. O saldo sobe. Validade acende amarelo antes de virar perda.
+    http://178.253.250.173/
+
+35. [tool] Financeiro ao vivo
+    Faturamento e margem crescem no gráfico enquanto o turno acontece.
+    http://178.253.250.173/
+
+36. [action] Entrar
+    Controle de interface (button)
+    http://178.253.250.173/dashboard/catalogo
+
+37. [section] Entrar
+    O papel define o que você vê. Admin gere. Vendedor vende.
+    http://178.253.250.173/dashboard/catalogo
+
+38. [link] Voltar à gestão
+    Link interno: /dashboard/catalogo
+    http://178.253.250.173/dashboard/catalogo
+
+Fim do inventário.

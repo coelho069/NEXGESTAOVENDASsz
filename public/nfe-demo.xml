@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <NFe>
+    <infNFe Id="NFe35240812345678000195550010000001231234567890">
+      <ide><nNF>123</nNF></ide>
+      <emit><xNome>Distribuidora Horizonte Ltda</xNome><CNPJ>12345678000195</CNPJ></emit>
+      <det nItem="1">
+        <prod>
+          <cEAN>7890000000028</cEAN>
+          <xProd>Leite Integral UHT 1L</xProd>
+          <NCM>04012010</NCM>
+          <uCom>UN</uCom>
+          <qCom>24.0000</qCom>
+          <vUnCom>4.1000</vUnCom>
+        </prod>
+      </det>
+      <det nItem="2">
+        <prod>
+          <cEAN>7890000000059</cEAN>
+          <xProd>Açúcar Refinado 1kg</xProd>
+          <NCM>17019900</NCM>
+          <uCom>UN</uCom>
+          <qCom>20.0000</qCom>
+          <vUnCom>3.2000</vUnCom>
+        </prod>
+      </det>
+      <det nItem="3">
+        <prod>
+          <cEAN>7898630000999</cEAN>
+          <xProd>Farinha de Trigo Especial 1kg</xProd>
+          <NCM>11010010</NCM>
+          <uCom>KG</uCom>
+          <qCom>15.0000</qCom>
+          <vUnCom>3.8000</vUnCom>
+        </prod>
+      </det>
+    </infNFe>
+  </NFe>
+</nfeProc>

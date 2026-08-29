@@ -1,0 +1,5 @@
+Name: PDV inteligente | Description: Busca no toque, item no clique, PIX em um gesto. Feito para o balcão — não para o mouse.
+
+Name: Estoque via XML | Description: A NF-e entra. O saldo sobe. Validade acende amarelo antes de virar perda.
+
+Name: Financeiro ao vivo | Description: Faturamento e margem crescem no gráfico enquanto o turno acontece.
