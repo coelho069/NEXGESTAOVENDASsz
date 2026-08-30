@@ -19,6 +19,12 @@ import {
   type SyncProgress,
 } from "@/lib/db";
 import { parseNfeXml } from "@/lib/nfe";
+import {
+  offlineFiscalState,
+  processingFiscalState,
+  requestFiscalEmit,
+  type FiscalReceiptState,
+} from "@/lib/fiscal/client";
 import type { CashShift, Customer, MetricsSummary, Product, Sale, Store } from "@/types";
 
 export interface CartItem {
@@ -45,6 +51,7 @@ interface StoreState {
   catalogEnabled: boolean;
   shift: CashShift | null;
   shifts: CashShift[];
+  fiscalBySaleId: Record<string, FiscalReceiptState>;
 }
 
 interface StoreActions {
@@ -119,6 +126,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     catalogEnabled: true,
     shift: null,
     shifts: [],
+    fiscalBySaleId: {},
   });
 
   const stateRef = useRef(state);
@@ -261,7 +269,20 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           online: onlineNow,
         });
         clearCart();
+        setState((s) => ({
+          ...s,
+          fiscalBySaleId: {
+            ...s.fiscalBySaleId,
+            [sale.id]: onlineNow ? processingFiscalState() : offlineFiscalState(),
+          },
+        }));
         if (onlineNow) {
+          void requestFiscalEmit(sale).then((fiscal) => {
+            setState((s) => ({
+              ...s,
+              fiscalBySaleId: { ...s.fiscalBySaleId, [sale.id]: fiscal },
+            }));
+          });
           const res = await syncPending((p) => setState((s) => ({ ...s, syncProgress: p })));
           setState((s) => ({ ...s, lastSync: res }));
         }

@@ -7,7 +7,7 @@
     "build": "NEXT_TEST_WASM=1 next build --webpack",
     "start": "next start --hostname 127.0.0.1 --port 3100",
     "lint": "eslint",
-    "test": "node --test --experimental-strip-types src/lib/auth/*.test.ts"
+    "test": "node --test --experimental-strip-types src/lib/auth/*.test.ts src/lib/fiscal/*.test.ts"
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
